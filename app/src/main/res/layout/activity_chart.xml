@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChartActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/bar_line_combine_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/line_chart"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/holo_purple"
+            android:id="@+id/btn_line_chart"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bar_chart"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/holo_purple"
+            android:id="@+id/btn_bar_chart"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pie_chart"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/holo_purple"
+            android:id="@+id/btn_pie_chart"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/combined_chart"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/holo_purple"
+            android:id="@+id/btn_bar_line_combine_chart"/>
+    </LinearLayout>
+</ScrollView>

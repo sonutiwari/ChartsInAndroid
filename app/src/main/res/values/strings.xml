@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Charts In Android</string>
+    <string name="line_chart">Line Chart</string>
+    <string name="bar_chart">Bar Chart</string>
+    <string name="pie_chart">Pie Chart</string>
+    <string name="combined_chart">Combined Chart</string>
+</resources>

@@ -3,6 +3,7 @@ package in.co.chicmic.chartsinandroid;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,6 +27,7 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.PercentFormatter;
+import com.github.mikephil.charting.listener.ChartTouchListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
@@ -66,7 +68,17 @@ public class ChartActivity extends AppCompatActivity implements View.OnClickList
         mButtonPieChart.setOnClickListener(this);
         mButtonBarChart.setOnClickListener(this);
         mButtonCombinedChart.setOnClickListener(this);
+        mCombinedChart.setOnTouchListener(mListener);
     }
+
+
+    // To disable touch on Graph.
+    View.OnTouchListener mListener = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View view, MotionEvent motionEvent) {
+            return true;
+        }
+    };
 
     @Override
     public void onClick(View view) {

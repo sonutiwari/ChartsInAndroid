@@ -32,6 +32,8 @@
             android:id="@+id/bar_line_combine_chart"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:focusable="false"
+            android:clickable="false"
             android:visibility="gone"/>
 
         <Button
